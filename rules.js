@@ -2,6 +2,7 @@
 const msgTemplate = (messageTemplate, args = [], value) => {
 	messageTemplate = messageTemplate.replace(':name', name)
 	let i = 1
+	
 	for(let msg of args) {
 		messageTemplate = messageTemplate.replace(`:arg${i++}`, msg)
 	}
